@@ -7,13 +7,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Home',),centerTitle: true,),
-      body: Center(
+    return  Center(
         child: ElevatedButton(onPressed: () {
-         context.goNamed(RouteName.dashboard.name,queryParameters: {'name':'Thamanna'});
-        }, child: Text('Dashboard')),
-      ),
+          context.goNamed(RouteName.settings.name,);
+        }, child: Text('Settings')),
     );
   }
 }
