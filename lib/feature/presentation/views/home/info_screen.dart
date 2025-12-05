@@ -18,6 +18,11 @@ class InfoScreen extends StatelessWidget {
             Text(name),
             SizedBox(height: 10,),
             ElevatedButton(onPressed: () {
+              // Router.neglect(
+              //   context,
+              //       () => context.goNamed(RouteName.home.name),
+              // );
+
               context.goNamed(RouteName.home.name);
 
             }, child: Text('Home')),

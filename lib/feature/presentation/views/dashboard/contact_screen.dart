@@ -9,14 +9,14 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Contact'), centerTitle: true),
+      appBar: AppBar(title: Text('Contact'), centerTitle: true,leading: IconButton(onPressed: () => context.pop(), icon: Icon(Icons.arrow_back),),),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
             context.goNamed(RouteName.dashboard.name);
 
           },
-          child: Text('Contact'),
+          child: Text('Dashboard'),
         ),
       ),
     );

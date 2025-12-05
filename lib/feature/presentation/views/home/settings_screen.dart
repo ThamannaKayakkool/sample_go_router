@@ -12,10 +12,17 @@ class SettingScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
+            // Router.neglect(
+            //   context,
+            //       () => context.goNamed(
+            //     RouteName.info.name,
+            //     queryParameters: {'name': 'Thamanna'},
+            //   ),
+            // );
             context.goNamed(
-              RouteName.info.name,
-              queryParameters: {'name': 'Thamanna'},
-            );
+                  RouteName.info.name,
+                  queryParameters: {'name': 'Thamanna'},
+              );
           },
           child: Text('Info'),
         ),

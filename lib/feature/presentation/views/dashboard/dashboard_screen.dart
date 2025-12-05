@@ -9,7 +9,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: ElevatedButton(onPressed: () {
-        context.goNamed(RouteName.contact.name,);
+        context.pushNamed(RouteName.contact.name,);
       }, child: Text('Contact')),
     );
   }

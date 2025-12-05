@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sample_go_router/feature/presentation/views/dashboard/contact_screen.dart';
 import 'package:sample_go_router/feature/presentation/views/dashboard/dashboard_screen.dart';
@@ -15,6 +14,7 @@ enum RouteName { main, home, dashboard, profile, settings, info, contact }
 
 
 final router = GoRouter(
+  //routerNeglect: true,
   errorBuilder: (context, state) => ErrorScreen(),
   initialLocation: '/main/home',
   routes: [
@@ -55,7 +55,7 @@ final router = GoRouter(
       },
       routes: [
         GoRoute(
-          path: '/info',
+          path: 'info',
           name: RouteName.info.name,
           builder: (context, state) {
             final name = state.uri.queryParameters['name'] ?? 'No Name';
