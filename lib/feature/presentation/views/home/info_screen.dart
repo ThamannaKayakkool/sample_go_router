@@ -13,7 +13,8 @@ class InfoScreen extends StatelessWidget {
       appBar: AppBar(title: Text('Info'),centerTitle: true,),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+
+          mainAxisAlignment: .center,
           children: [
             Text(name),
             SizedBox(height: 10,),

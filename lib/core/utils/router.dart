@@ -8,12 +8,13 @@ import 'package:sample_go_router/feature/presentation/views/error_screen.dart';
 import 'package:sample_go_router/feature/presentation/views/main_screen.dart';
 import 'package:sample_go_router/feature/presentation/views/home/home_screen.dart';
 import 'package:sample_go_router/feature/presentation/views/profile_screen.dart';
+import 'package:sample_go_router/main.dart';
 
 enum RouteName { main, home, dashboard, profile, settings, info, contact }
 
 
-
 final router = GoRouter(
+  navigatorKey: navigatorKey,
   //routerNeglect: true,
   errorBuilder: (context, state) => ErrorScreen(),
   initialLocation: '/main/home',

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "164790489552",
+    "project_id": "sample-go-router",
+    "storage_bucket": "sample-go-router.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164790489552:android:454f40b54cafca9b47a9d5",
+        "android_client_info": {
+          "package_name": "com.example.sample_go_router"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAob7jK_XvyCd5peoX5Fwb8Gug3WJ24Tlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
