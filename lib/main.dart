@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:sample_go_router/core/service/notification_service.dart';
 import 'package:sample_go_router/core/utils/router.dart';
 import 'package:sample_go_router/firebase_options.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -20,7 +21,7 @@ Future _firebaseBackgroundMessage(RemoteMessage message) async {
 
 // to handle notification on foreground on web platform
 void showNotification({required String title, required String body}) {
-  showDialog(
+  showShadDialog(
     context: navigatorKey.currentContext!,
     builder: (context) => AlertDialog(
       title: Text(title),
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: notificationService,
-      child: MaterialApp.router(
+      child: ShadApp.router(
         title: 'Go Router',
         routerConfig: router,
         debugShowCheckedModeBanner: false,

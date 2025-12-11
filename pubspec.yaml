@@ -38,6 +38,7 @@ dependencies:
   firebase_core: ^4.2.1
   firebase_messaging: ^16.0.4
   provider: ^6.1.5+1
+  shadcn_ui: ^0.40.5
 
 dev_dependencies:
   flutter_test:
